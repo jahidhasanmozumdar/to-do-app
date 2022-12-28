@@ -1,0 +1,335 @@
+.login-button {
+    position: relative;
+    display: inline-block;
+}
+.login-button > *:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.login-button .login-button-content {
+    visibility: hidden;
+    position: absolute;
+    z-index: 50;
+    opacity: 0;
+    transform-origin: top;
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+  
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:not(.login-button-hover):focus .login-button-content,
+.login-button:not(.login-button-hover):focus-within .login-button-content {
+    visibility: visible;
+    opacity: 1;
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:not(.login-button-hover):focus .login-button-content,
+.login-button:not(.login-button-hover):focus-within .login-button-content {
+    visibility: visible;
+    opacity: 1;
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:not(.login-button-hover):focus .login-button-content,
+.login-button:not(.login-button-hover):focus-within .login-button-content {
+    visibility: visible;
+    opacity: 1;
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:not(.login-button-hover):focus .login-button-content,
+.login-button:not(.login-button-hover):focus-within .login-button-content {
+    visibility: visible;
+    opacity: 1;
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:focus .login-button-content,
+.login-button:focus-within .login-button-content {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:focus .login-button-content,
+.login-button:focus-within .login-button-content {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:focus .login-button-content,
+.login-button:focus-within .login-button-content {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.login-button.login-button-open .login-button-content,
+.login-button.login-button-hover:hover .login-button-content,
+.login-button:focus .login-button-content,
+.login-button:focus-within .login-button-content {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.login-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.login-menu.horizontal {
+    display: inline-flex;
+    flex-direction: row;
+}
+.login-menu.horizontal :where(li) {
+    flex-direction: row;
+}
+:where(.login-menu li) {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.login-menu :where(li:not(.login-menu-title)) > :where(*:not(ul)) {
+    display: flex;
+}
+.login-menu :where(li:not(.disabled):not(.login-menu-title)) > :where(*:not(ul)) {
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.login-menu > :where(li > *:not(ul):focus) {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.login-menu > :where(li.disabled > *:not(ul):focus) {
+    cursor: auto;
+}
+.login-menu > :where(li) :where(ul) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.login-menu > :where(li) > :where(ul) {
+    position: absolute;
+    display: none;
+    top: initial;
+    left: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.login-menu > :where(li:hover) > :where(ul) {
+    display: flex;
+}
+.login-menu > :where(li:focus) > :where(ul) {
+    display: flex;
+}
+.login-menu.horizontal li.bordered > a,
+        .login-menu.horizontal li.bordered > button,
+        .login-menu.horizontal li.bordered > span {
+    border-left-width: 0px;
+    border-bottom-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+.login-menu.horizontal li.bordered > a,
+        .login-menu.horizontal li.bordered > button,
+        .login-menu.horizontal li.bordered > span {
+    border-left-width: 0px;
+    border-bottom-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+.login-menu.horizontal li.bordered > a,
+        .login-menu.horizontal li.bordered > button,
+        .login-menu.horizontal li.bordered > span {
+    border-left-width: 0px;
+    border-bottom-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+.login-menu[class*=" px-"]:not(.login-menu[class*=" px-0"]) li > *,
+  .login-menu[class^="px-"]:not(.login-menu[class^="px-0"]) li > *,
+  .login-menu[class*=" p-"]:not(.login-menu[class*=" p-0"]) li > *,
+  .login-menu[class^="p-"]:not(.login-menu[class^="p-0"]) li > * {
+    border-radius: var(--rounded-btn, 0.5rem);
+}
+.login-menu[class*=" px-"]:not(.login-menu[class*=" px-0"]) li > *,
+  .login-menu[class^="px-"]:not(.login-menu[class^="px-0"]) li > *,
+  .login-menu[class*=" p-"]:not(.login-menu[class*=" p-0"]) li > *,
+  .login-menu[class^="p-"]:not(.login-menu[class^="p-0"]) li > * {
+    border-radius: var(--rounded-btn, 0.5rem);
+}
+.login-menu[class*=" px-"]:not(.login-menu[class*=" px-0"]) li > *,
+  .login-menu[class^="px-"]:not(.login-menu[class^="px-0"]) li > *,
+  .login-menu[class*=" p-"]:not(.login-menu[class*=" p-0"]) li > *,
+  .login-menu[class^="p-"]:not(.login-menu[class^="p-0"]) li > * {
+    border-radius: var(--rounded-btn, 0.5rem);
+}
+.login-menu[class*=" px-"]:not(.login-menu[class*=" px-0"]) li > *,
+  .login-menu[class^="px-"]:not(.login-menu[class^="px-0"]) li > *,
+  .login-menu[class*=" p-"]:not(.login-menu[class*=" p-0"]) li > *,
+  .login-menu[class^="p-"]:not(.login-menu[class^="p-0"]) li > * {
+    border-radius: var(--rounded-btn, 0.5rem);
+}
+.login-menu :where(li.bordered > *) {
+    border-left-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+.login-menu :where(li) > :where(*:not(ul)) {
+    gap: 0.75rem/* 12px */;
+    padding-left: 1rem/* 16px */;
+    padding-right: 1rem/* 16px */;
+    padding-top: 0.75rem/* 12px */;
+    padding-bottom: 0.75rem/* 12px */;
+    color: currentColor;
+}
+.login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(*:not(ul):focus),
+  .login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(*:not(ul):hover) {
+    background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.1;
+}
+.login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(*:not(ul):focus),
+  .login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(*:not(ul):hover) {
+    background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.1;
+}
+.login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(:not(ul).active),
+  .login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(*:not(ul):active) {
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--p) / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+.login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(:not(ul).active),
+  .login-menu :where(li:not(.login-menu-title):not(:empty)) > :where(*:not(ul):active) {
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--p) / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+.login-menu :where(li:empty) {
+    margin-left: 1rem/* 16px */;
+    margin-right: 1rem/* 16px */;
+    margin-top: 0.5rem/* 8px */;
+    margin-bottom: 0.5rem/* 8px */;
+    height: 1px;
+    background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.1;
+}
+.login-menu li.disabled > * {
+    user-select: none;
+    color: hsl(var(--bc) / var(--tw-text-opacity));
+    --tw-text-opacity: 0.2;
+}
+.login-menu li.disabled > *:hover {
+    background-color: transparent;
+}
+.login-menu li.hover-bordered a {
+    border-left-width: 4px;
+    border-color: transparent;
+}
+.login-menu li.hover-bordered a:hover {
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+.login-menu.compact li > a,
+      .login-menu.compact li > span {
+    padding-top: 0.5rem/* 8px */;
+    padding-bottom: 0.5rem/* 8px */;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+}
+.login-menu.compact li > a,
+      .login-menu.compact li > span {
+    padding-top: 0.5rem/* 8px */;
+    padding-bottom: 0.5rem/* 8px */;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+}
+.login-menu .login-menu-title > * {
+    padding-top: 0.25rem/* 4px */;
+    padding-bottom: 0.25rem/* 4px */;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+    font-weight: 700;
+    color: hsl(var(--bc) / var(--tw-text-opacity));
+    --tw-text-opacity: 0.4;
+}
+.login-menu :where(li:not(.disabled)) > :where(*:not(ul)) {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.login-menu > :where(li:first-child) {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.login-menu > :where(li:first-child) > :where(:not(ul)) {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.login-menu > :where(li:last-child) {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.login-menu > :where(li:last-child) > :where(:not(ul)) {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.login-menu > :where(li) > :where(ul) :where(li) {
+    width: 100%;
+    white-space: nowrap;
+}
+.login-menu > :where(li) > :where(ul) :where(li) :where(ul) {
+    padding-left: 1rem/* 16px */;
+}
+.login-menu > :where(li) > :where(ul) :where(li) > :where(:not(ul)) {
+    width: 100%;
+    white-space: nowrap;
+}
+.login-menu > :where(li) > :where(ul) > :where(li:first-child) {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.login-menu > :where(li) > :where(ul) > :where(li:first-child) > :where(:not(ul)) {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+.login-menu > :where(li) > :where(ul) > :where(li:last-child) {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.login-menu > :where(li) > :where(ul) > :where(li:last-child) > :where(:not(ul)) {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
